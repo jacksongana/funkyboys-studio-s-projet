@@ -1,0 +1,188 @@
+html {
+    background: #e6e9e9;
+    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: black;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 4000px;
+    padding: 2em 2em 4em;
+}
+
+#intro {
+    height: 100vh;
+    position: relative;
+}
+
+#intro img , main header img {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover;
+}
+
+#intro h1 {
+    color: white;
+    text-align: center;
+    position: absolute;
+    height: 100%; width: 100%; line-height: 100vh;
+    font-size: 60px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 500px;
+    height: 600px;
+}
+
+table a {
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */   
+    
+    margin: 1.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;           /* Centrage du texte */   
+    background-color: brown;    /* Arrière-plan */
+    color: #fff;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+
+    transition: all 1s ;          /* Ajout des effets de transition */
+}
+
+.question
+    {
+    font-style: italic;
+    }
+
+.compteur
+    {
+    font-weight: bold;
+    }
+
+.indent
+    {
+    margin-left: 2em;
+    }
+
+.exemple
+    {
+    background-color: #efefef;
+    padding: 0.2em;  
+    }
+
+.container {
+    display: inline-block;
+}
+.container .text {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+    color: white;
+    width: 70%;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    flex: 1 1 auto;
+    text-align: center;
+    position: relative;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: flex;
+    flex-flow: column wrap;
+}
+.sous li{
+    flex: 1 1 auto;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: rgba(209, 202, 139, 0.788);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+#global {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    }
+
+    #partie1 {
+        width: 500px;
+        float: left;
+        margin-left: 1%;
+        height: 500px;
+        }
+    
+    #partie2 {
+        width: 500px;
+        float: right;
+        margin-right: 1%;
+        }

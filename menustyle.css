@@ -1,0 +1,74 @@
+#logo {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    top: 15px;
+    left: 15px;
+
+    border-radius: 85%;
+    text-align: center;
+    z-index: 2;
+}
+
+
+#menu {
+    background-color:black;
+    height:100px;
+    display:flex; flex-direction:column; justify-content:center;
+    box-sizing:border-box;
+    padding-left:70px;
+    z-index:1;
+    transition:background-color 0.5s;
+}
+
+.scrolled #menu.sticky , #menu:not(.sticky) {
+    position:fixed;
+    width:100%;
+    top:0; left:0;
+    background-color:rgba(0,0,0,0.75);
+}
+
+#menu:not(.sticky) + main {
+    padding-top:100px;
+}
+
+.scrolled #menu.sticky + main {
+    padding-top:160px;
+}
+
+#menu ul {
+    
+    list-style:none;
+    
+
+}
+
+#menu a {
+    color:rgb(0, 0, 0);
+     
+}
+
+
+
+li > ul > li > a:link,
+li > ul > li > a:hover,
+li > ul > li > a:active,
+li > ul > li > a:focus,
+li > ul > li a{
+    background-color: white;
+  color:#444;
+  text-decoration: none; 
+}
+li > ul > li:hover{
+    margin-right: 5px;
+  background-color:rgba(255, 255, 255, 0.671);
+}
+li > ul > li:hover a{
+  color:rgb(0, 0, 0);
+}
+li > ul > li{padding:1px;}
+nav li > ul{display:none; position: absolute;
+
+}
+nav li:hover > ul{display:block;width:100%;}

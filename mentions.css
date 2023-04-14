@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+   justify-content: center;
+   text-align: center;
+}
+
+.mention{
+    margin: 20vh auto;
+}
+.mention h1{
+    color: white;
+    text-align: center;
+}
+.mention p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.foot{
+    height: 100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    text-align: center;
+}
+
+.foot .container .row .col-2{
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.foot .container .row i{
+  color: gainsboro;
+font-size: 15px;
+font-weight: bolder;
+}
+
+.foot .container .row a{
+  
+  justify-content: center;
+  text-align: center;
+  }
+.foot .container .row a,i{
+    justify-content: center;
+  text-align: center;
+  }

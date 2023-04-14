@@ -1,0 +1,251 @@
+html {
+    background: #e6e9e9;
+    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: black;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 4000px;
+    padding: 2em 2em 4em;
+}
+
+#logo {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    top: 15px;
+    left: 15px;
+
+    border-radius: 85%;
+    text-align: center;
+    z-index: 2;
+}
+
+#menu-btn{
+    margin-left: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+#menu {
+    background-color:black;
+    height:100px;
+    display:flex; flex-direction:column; justify-content:center;
+    box-sizing:border-box;
+    padding-left:70px;
+    z-index:1;
+    transition:background-color 0.5s;
+}
+
+.scrolled #menu.sticky , #menu:not(.sticky) {
+    position:fixed;
+    width:100%;
+    top:0; left:0;
+    background-color:rgba(0,0,0,0.75);
+}
+
+#menu:not(.sticky) + main {
+    padding-top:100px;
+}
+
+.scrolled #menu.sticky + main {
+    padding-top:160px;
+}
+
+#menu ul {
+    font-size: 20px;
+    font-family: 'Poppins', 
+  sans-serif;
+    list-style:none;
+    
+
+}
+
+#menu a {
+    font-family: 'Poppins',
+    sans-serif;
+    color:rgb(255, 255, 255);
+     
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    flex: 1 1 auto;
+    text-align: center;
+    position: relative;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+ 
+
+
+nav > ul > li{
+  position:relative;
+  display: inline-block;
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-top: 1.3%;
+    
+}
+
+li > ul > li > a:link,
+li > ul > li > a:hover,
+li > ul > li > a:active,
+li > ul > li > a:focus,
+li > ul > li a{
+    text-align: center;
+    position: relative;
+    background-color: black;
+  color:rgb(0, 0, 0);
+  text-decoration: none; 
+}
+li > ul > li:hover{
+    margin-right: 5px;
+  background-color:rgb(0, 0, 0);
+}
+li > ul > li:hover a{
+  color:#fff;
+}
+li > ul > li{padding:1px;}
+nav li > ul{display:none; position: absolute;
+
+}
+nav li:hover > ul{display:block;width:100%;}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: -2em
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+#actualités{
+    background-color: black;
+}
+
+    #saga{
+        background-color: white;
+        color: black;
+        height: 570px; width: 1000px; margin: 2em;
+        border-radius: 50px;
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+
+.latest_posts
+{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    font-weight: lighter;
+    font-size: medium;
+    margin-bottom: -2em;
+}
+
+#conteneur {
+    display: flex;
+    margin: 30px;
+    margin-top: -2em;
+    font-weight: bold;
+    font-size: medium;
+  }
+
+  .flex{
+    flex-grow: 1;
+    margin: 5px;
+    width: 10%;
+    font-weight: bold;
+    font-size: medium;
+ }
+
+.post img
+{
+    width: 200px;
+    height: 100px;
+}
+
+.post .title
+{
+    margin: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.post .details
+{
+    margin: 5px;
+    font-size: medium;
+}
+
+.post button
+{
+    color: red;
+    height: 25px;
+    position: absolute;
+    margin: 10px;
+    text-decoration: dashed;
+}
+
+.foot{
+    height: 100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+
+.foot .container .row .col-2{
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.foot .container .row i{
+  color: gainsboro;
+font-size: 15px;
+font-weight: bolder;
+}
+
+.foot .container .row a{
+  
+  justify-content: center;
+  text-align: center;
+  }
+.foot .container .row a,i{
+    justify-content: center;
+  text-align: center;
+  }
